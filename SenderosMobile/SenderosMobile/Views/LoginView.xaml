@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="SenderosMobile.LoginView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:SenderosMobile"
+    xmlns:translator="clr-namespace:SenderosMobile.Helpers"
+    BackgroundColor="#2B303A">
+
+    <AbsoluteLayout>
+      <local:TitleLabel
+          Margin="20,0,20,0"
+          AbsoluteLayout.LayoutBounds=".5,.1,1,.1"
+          AbsoluteLayout.LayoutFlags="All"
+          Text="{translator:Translate LoginLabelTitle}"
+          VerticalOptions="CenterAndExpand" />
+
+      <local:TitleLabel
+          Margin="20,0,20,0"
+          AbsoluteLayout.LayoutBounds=".5,.25,1,.1"
+          AbsoluteLayout.LayoutFlags="All"
+          Text="{translator:Translate LoginLabelUN}"
+          VerticalOptions="CenterAndExpand" />
+
+      <local:FieldsLabel
+          Margin="20,0,20,0"
+          AbsoluteLayout.LayoutBounds=".5,.425,1,.1"
+          AbsoluteLayout.LayoutFlags="All"
+          Text="{translator:Translate LoginEntryEmail}"
+          VerticalOptions="CenterAndExpand" />
+      
+      <local:EmailEntry
+            Margin="20,0,20,0"
+            AbsoluteLayout.LayoutBounds=".5,.5,1,.1"
+            AbsoluteLayout.LayoutFlags="All"
+            HorizontalOptions="Fill"
+            Keyboard="Email"
+            Placeholder=""
+            VerticalOptions="CenterAndExpand" />
+
+      <local:FieldsLabel
+          Margin="20,0,20,0"
+          AbsoluteLayout.LayoutBounds=".5,.6,1,.1"
+          AbsoluteLayout.LayoutFlags="All"
+          Text="{translator:Translate LoginEntryPassword}"
+          VerticalOptions="CenterAndExpand" />
+      
+        <local:PasswordEntry
+            Margin="20,0,20,0"
+            AbsoluteLayout.LayoutBounds=".5,.675,1,.1"
+            AbsoluteLayout.LayoutFlags="All"
+            HorizontalOptions="Fill"
+            IsPassword="True"
+            Keyboard="Text"
+            Placeholder=""
+            VerticalOptions="CenterAndExpand" />
+
+        <local:LoginButton
+            Margin="20,0,20,10"
+            AbsoluteLayout.LayoutBounds=".05,.9,.49,.1"
+            AbsoluteLayout.LayoutFlags="All"
+            HorizontalOptions="Fill"
+            Text="{translator:Translate LoginButtonLogin}"
+            VerticalOptions="CenterAndExpand"
+            Clicked="LoginClicked"/>
+
+         <local:BackButton
+            Margin="20,0,20,10"
+            AbsoluteLayout.LayoutBounds=".95,.9,.49,.1"
+            AbsoluteLayout.LayoutFlags="All"
+            HorizontalOptions="Fill"
+            Text="{translator:Translate LoginButtonBack}"
+            VerticalOptions="CenterAndExpand"
+            Clicked="BackClicked"/>
+    </AbsoluteLayout>
+
+</ContentPage>

@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SenderosMobile.MainMasterView"
+             xmlns:local="clr-namespace:SenderosMobile"
+             xmlns:translator="clr-namespace:SenderosMobile.Helpers"
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             BackgroundColor="#2B303A"
+             Title="Master">
+
+    <AbsoluteLayout>
+        <Frame
+            Margin="0,0,0,20"
+            AbsoluteLayout.LayoutBounds="0,0,1,.55"
+            AbsoluteLayout.LayoutFlags="All"
+            BackgroundColor="#92DCE5"
+            CornerRadius="0">
+
+            <!--<AbsoluteLayout>
+                <controls:CircleImage Source="defaultuser.png" Aspect="AspectFill">
+                    <controls:CircleImage.WidthRequest>
+                        <OnPlatform x:TypeArguments="x:Double">
+                            <On Platform="Android, iOS">55</On>
+                        </OnPlatform>
+                    </controls:CircleImage.WidthRequest>
+                    <controls:CircleImage.HeightRequest>
+                        <OnPlatform x:TypeArguments="x:Double">
+                            <On Platform="Android, iOS">55</On>
+                        </OnPlatform>
+                    </controls:CircleImage.HeightRequest>
+                </controls:CircleImage>
+            </AbsoluteLayout>-->
+        </Frame>
+
+        <Label
+            Margin="20,0,20,0"
+            AbsoluteLayout.LayoutBounds=".5,.25,1,.2"
+            AbsoluteLayout.LayoutFlags="All"
+            Text="Senderos UN"
+            TextColor="Black"
+            VerticalOptions="CenterAndExpand"/>
+
+        <local:OptionsButton
+            Margin="0,10,0,10"
+            AbsoluteLayout.LayoutBounds=".5,.5,1,.1"
+            AbsoluteLayout.LayoutFlags="All"
+            Text="{translator:Translate MainMasterModifyUser}"
+            VerticalOptions="CenterAndExpand"/>
+
+        <local:OptionsButton
+            Margin="0,10,0,10"
+            AbsoluteLayout.LayoutBounds=".5,.6,1,.1"
+            AbsoluteLayout.LayoutFlags="All"
+            Text="{translator:Translate MainMasterCreateList}"
+            VerticalOptions="CenterAndExpand"/>
+
+        <local:OptionsButton
+            Margin="0,10,0,10"
+            AbsoluteLayout.LayoutBounds=".5,.7,1,.1"
+            AbsoluteLayout.LayoutFlags="All"
+            Text="{translator:Translate MainMasterSeeLists}"
+            VerticalOptions="CenterAndExpand"/>
+
+        <local:OptionsButton
+            Margin="0,10,0,10"
+            AbsoluteLayout.LayoutBounds=".5,.8,1,.1"
+            AbsoluteLayout.LayoutFlags="All"
+            Text="{translator:Translate MainMasterPlaces}"
+            VerticalOptions="CenterAndExpand"/>
+
+        <local:OptionsButton
+            Margin="0,10,0,10"
+            AbsoluteLayout.LayoutBounds=".5,.9,1,.1"
+            AbsoluteLayout.LayoutFlags="All"
+            Text="{translator:Translate MainMasterDeleteAccount}"
+            VerticalOptions="CenterAndExpand"/>
+
+        <local:OptionsButton
+            Margin="0,10,0,10"
+            AbsoluteLayout.LayoutBounds=".5,1,1,.1"
+            AbsoluteLayout.LayoutFlags="All"
+            Text="{translator:Translate MainMasterLogout}"
+            VerticalOptions="CenterAndExpand"/>
+    </AbsoluteLayout>
+
+</ContentPage>
