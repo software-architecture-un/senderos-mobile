@@ -8,18 +8,18 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("SenderosMobile.Droid.Views.MainDetailView.xaml", "Views/MainDetailView.xaml", typeof(global::SenderosMobile.MainDetailView))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("SenderosMobile.iOS.Views.CreateListView.xaml", "Views/CreateListView.xaml", typeof(global::SenderosMobile.Views.CreateListView))]
 
-namespace SenderosMobile {
+namespace SenderosMobile.Views {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\David Herrera\\source\\repos\\SenderosMobile\\SenderosMobile\\SenderosMobile\\" +
-        "Views\\MainDetailView.xaml")]
-    public partial class MainDetailView : global::Xamarin.Forms.ContentPage {
+        "Views\\CreateListView.xaml")]
+    public partial class CreateListView : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MainDetailView));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(CreateListView));
         }
     }
 }

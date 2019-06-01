@@ -62,7 +62,6 @@ C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobile\SenderosMobile
 C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobile\SenderosMobile.Android\bin\Debug\Plugin.Multilingual.Abstractions.dll.mdb
 C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobile\SenderosMobile.Android\bin\Debug\Plugin.Multilingual.dll.mdb
 C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobile\SenderosMobile.Android\obj\Debug\81\Views\MainMasterView.xaml.g.cs
-C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobile\SenderosMobile.Android\obj\Debug\81\Views\MainDetailView.xaml.g.cs
 C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobile\SenderosMobile.Android\obj\Debug\81\Views\MainMasterDetailView.xaml.g.cs
 C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobile\SenderosMobile.Android\obj\Debug\81\linksrc\SenderosMobile.Android.pdb
 C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobile\SenderosMobile.Android\obj\Debug\81\linksrc\FormsViewGroup.pdb
@@ -115,5 +114,11 @@ C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobile\SenderosMobile
 C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobile\SenderosMobile.Android\obj\Debug\81\android\assets\Xamarin.Forms.Core.pdb
 C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobile\SenderosMobile.Android\obj\Debug\81\android\assets\Xamarin.Forms.Platform.Android.pdb
 C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobile\SenderosMobile.Android\obj\Debug\81\android\assets\Xamarin.Forms.Xaml.pdb
+C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobile\SenderosMobile.Android\obj\Debug\81\Views\DeleteAccountView.xaml.g.cs
+C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobile\SenderosMobile.Android\obj\Debug\81\Views\ModifyUserView.xaml.g.cs
+C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobile\SenderosMobile.Android\obj\Debug\81\Views\CreateListView.xaml.g.cs
+C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobile\SenderosMobile.Android\obj\Debug\81\Views\SeeListsView.xaml.g.cs
+C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobile\SenderosMobile.Android\obj\Debug\81\Views\PlacesView.xaml.g.cs
+C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobile\SenderosMobile.Android\obj\Debug\81\Views\SignupView.xaml.g.cs
 C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobile\SenderosMobile.Android\obj\Debug\81\linksrc\Plugin.Multilingual.Abstractions.dll.mdb
 C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobile\SenderosMobile.Android\obj\Debug\81\linksrc\Plugin.Multilingual.dll.mdb

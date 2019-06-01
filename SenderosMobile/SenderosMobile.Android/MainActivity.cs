@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using ImageCircle.Forms.Plugin.Droid;
 
 namespace SenderosMobile.Droid
 {
@@ -20,6 +21,13 @@ namespace SenderosMobile.Droid
             base.OnCreate(savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
+
+            ImageCircleRenderer.Init();
+        }
+
+        public override void OnBackPressed()
+        {
+            //base.OnBackPressed();
         }
     }
 }

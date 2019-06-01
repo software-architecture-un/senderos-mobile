@@ -71,6 +71,7 @@
     <Compile Include="Renderers\Login\EmailEntryRenderer.cs" />
     <Compile Include="Renderers\Login\LoginButtonRenderer.cs" />
     <Compile Include="Renderers\Login\BackButtonRenderer.cs" />
+    <Compile Include="Renderers\MainMaster\MasterNameLabelRenderer.cs" />
     <Compile Include="Renderers\MainMaster\OptionsButtonRenderer.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

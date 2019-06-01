@@ -24,7 +24,16 @@
     <Compile Include="$(MSBuildThisFileDirectory)Renderers\Login\EmailEntry.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Renderers\Login\BackButton.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Renderers\Login\LoginButton.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Renderers\MainMaster\MasterNameLabel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Renderers\MainMaster\OptionsButton.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\CreateListView.xaml.cs">
+      <DependentUpon>CreateListView.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\DeleteAccountView.xaml.cs">
+      <DependentUpon>DeleteAccountView.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\LandingView.xaml.cs">
       <DependentUpon>LandingView.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -32,8 +41,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)Views\LoginView.xaml.cs">
       <DependentUpon>LoginView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Views\MainDetailView.xaml.cs">
-      <DependentUpon>MainDetailView.xaml</DependentUpon>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ModifyUserView.xaml.cs">
+      <DependentUpon>ModifyUserView.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\MainMasterDetailView.xaml.cs">
@@ -42,6 +51,18 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\MainMasterView.xaml.cs">
       <DependentUpon>MainMasterView.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\PlacesView.xaml.cs">
+      <DependentUpon>PlacesView.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\SeeListsView.xaml.cs">
+      <DependentUpon>SeeListsView.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\SignupView.xaml.cs">
+      <DependentUpon>SignupView.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -58,13 +79,43 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\MainDetailView.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\ModifyUserView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\MainMasterDetailView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\DeleteAccountView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\CreateListView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\SeeListsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\PlacesView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\SignupView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>

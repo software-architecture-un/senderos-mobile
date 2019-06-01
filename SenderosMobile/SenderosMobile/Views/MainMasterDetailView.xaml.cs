@@ -10,16 +10,15 @@ using Xamarin.Forms.Xaml;
 namespace SenderosMobile
 {
 	public partial class MainMasterDetailView : MasterDetailPage
-	{
+    {
 		public MainMasterDetailView ()
 		{
 			InitializeComponent ();
 
-            MainMasterView master = new MainMasterView();
-            MainDetailView detail = new MainDetailView();
+            this.Master = new MainMasterView();
+            this.Detail = new NavigationPage(new ModifyUserView());
 
-            this.Master = master;
-            this.Detail = new NavigationPage(detail);
+            App.MasterDetail = this;
 		}
 	}
 }

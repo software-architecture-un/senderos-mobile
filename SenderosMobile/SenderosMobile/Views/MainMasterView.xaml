@@ -11,76 +11,82 @@
     <AbsoluteLayout>
         <Frame
             Margin="0,0,0,20"
-            AbsoluteLayout.LayoutBounds="0,0,1,.55"
+            AbsoluteLayout.LayoutBounds="0,0,1,.45"
             AbsoluteLayout.LayoutFlags="All"
             BackgroundColor="#92DCE5"
             CornerRadius="0">
 
-            <!--<AbsoluteLayout>
-                <controls:CircleImage Source="defaultuser.png" Aspect="AspectFill">
-                    <controls:CircleImage.WidthRequest>
-                        <OnPlatform x:TypeArguments="x:Double">
-                            <On Platform="Android, iOS">55</On>
-                        </OnPlatform>
-                    </controls:CircleImage.WidthRequest>
-                    <controls:CircleImage.HeightRequest>
-                        <OnPlatform x:TypeArguments="x:Double">
-                            <On Platform="Android, iOS">55</On>
-                        </OnPlatform>
-                    </controls:CircleImage.HeightRequest>
+            <AbsoluteLayout>
+                <controls:CircleImage
+                    Source="defaultuser.png"
+                    Aspect="AspectFit"
+                    AbsoluteLayout.LayoutBounds=".5,.3,.6,.6"
+                    AbsoluteLayout.LayoutFlags="All"
+                    BorderThickness="2"
+                    BorderColor="#2B303A"
+                    FillColor="#FFFFFF">
+
                 </controls:CircleImage>
-            </AbsoluteLayout>-->
+
+                <local:MasterNameLabel
+                    Margin="20,0,20,0"
+                    AbsoluteLayout.LayoutBounds=".5,.9,1,.2"
+                    AbsoluteLayout.LayoutFlags="All"
+                    Text="David Herrera (Prueba)"
+                    TextColor="Black"
+                    VerticalOptions="CenterAndExpand"/> 
+            </AbsoluteLayout>
         </Frame>
 
-        <Label
-            Margin="20,0,20,0"
-            AbsoluteLayout.LayoutBounds=".5,.25,1,.2"
-            AbsoluteLayout.LayoutFlags="All"
-            Text="Senderos UN"
-            TextColor="Black"
-            VerticalOptions="CenterAndExpand"/>
+        
 
         <local:OptionsButton
             Margin="0,10,0,10"
             AbsoluteLayout.LayoutBounds=".5,.5,1,.1"
             AbsoluteLayout.LayoutFlags="All"
             Text="{translator:Translate MainMasterModifyUser}"
-            VerticalOptions="CenterAndExpand"/>
+            VerticalOptions="CenterAndExpand"
+            Clicked="ModifyUserClicked"/>
 
         <local:OptionsButton
             Margin="0,10,0,10"
             AbsoluteLayout.LayoutBounds=".5,.6,1,.1"
             AbsoluteLayout.LayoutFlags="All"
             Text="{translator:Translate MainMasterCreateList}"
-            VerticalOptions="CenterAndExpand"/>
+            VerticalOptions="CenterAndExpand"
+            Clicked="CreateListClicked"/>
 
         <local:OptionsButton
             Margin="0,10,0,10"
             AbsoluteLayout.LayoutBounds=".5,.7,1,.1"
             AbsoluteLayout.LayoutFlags="All"
             Text="{translator:Translate MainMasterSeeLists}"
-            VerticalOptions="CenterAndExpand"/>
+            VerticalOptions="CenterAndExpand"
+            Clicked="SeeListsClicked"/>
 
         <local:OptionsButton
             Margin="0,10,0,10"
             AbsoluteLayout.LayoutBounds=".5,.8,1,.1"
             AbsoluteLayout.LayoutFlags="All"
             Text="{translator:Translate MainMasterPlaces}"
-            VerticalOptions="CenterAndExpand"/>
+            VerticalOptions="CenterAndExpand"
+            Clicked="PlacesClicked"/>
 
         <local:OptionsButton
             Margin="0,10,0,10"
             AbsoluteLayout.LayoutBounds=".5,.9,1,.1"
             AbsoluteLayout.LayoutFlags="All"
             Text="{translator:Translate MainMasterDeleteAccount}"
-            VerticalOptions="CenterAndExpand"/>
+            VerticalOptions="CenterAndExpand"
+            Clicked="DeleteAccountClicked"/>
 
         <local:OptionsButton
             Margin="0,10,0,10"
             AbsoluteLayout.LayoutBounds=".5,1,1,.1"
             AbsoluteLayout.LayoutFlags="All"
             Text="{translator:Translate MainMasterLogout}"
-            VerticalOptions="CenterAndExpand"/>
+            VerticalOptions="CenterAndExpand"
+            Clicked="LogoutClicked"/>
     </AbsoluteLayout>
 
 </ContentPage>

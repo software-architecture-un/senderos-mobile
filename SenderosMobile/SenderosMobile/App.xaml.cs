@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ImageCircle.Forms.Plugin.Droid;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -7,9 +8,13 @@ namespace SenderosMobile
 {
     public partial class App : Application
     {
+        public static MainMasterDetailView MasterDetail { get; set; }
+
         public App()
         {
             InitializeComponent();
+
+            ImageCircleRenderer.Init();
 
             LandingView page = new LandingView();
             MainPage = page;

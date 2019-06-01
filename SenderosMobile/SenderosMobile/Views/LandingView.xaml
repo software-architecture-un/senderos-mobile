@@ -37,7 +37,8 @@
             AbsoluteLayout.LayoutFlags="All"
             HorizontalOptions="Fill"
             Text="{translator:Translate LandingButtonSignUp}"
-            VerticalOptions="CenterAndExpand" />
+            VerticalOptions="CenterAndExpand"
+            Clicked="SignUpClicked"/>
 
         <local:FieldsLabel
             Margin="20,0,20,0"

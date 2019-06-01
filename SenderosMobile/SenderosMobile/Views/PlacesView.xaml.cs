@@ -7,11 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace SenderosMobile
+namespace SenderosMobile.Views
 {
-	public partial class MainDetailView : ContentPage
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class PlacesView : ContentPage
 	{
-		public MainDetailView ()
+		public PlacesView ()
 		{
 			InitializeComponent ();
 		}
