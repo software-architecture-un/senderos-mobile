@@ -212,5 +212,131 @@ namespace SenderosMobileLanguage.Resx {
                 return ResourceManager.GetString("MainMasterSeeLists", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Edad.
+        /// </summary>
+        public static string SignupAge {
+            get {
+                return ResourceManager.GetString("SignupAge", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Seleccione su edad.
+        /// </summary>
+        public static string SignupAgePicker {
+            get {
+                return ResourceManager.GetString("SignupAgePicker", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Volver.
+        /// </summary>
+        public static string SignupBack {
+            get {
+                return ResourceManager.GetString("SignupBack", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Confirmar contraseña.
+        /// </summary>
+        public static string SignupConfirmPassword {
+            get {
+                return ResourceManager.GetString("SignupConfirmPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Crear cuenta.
+        /// </summary>
+        public static string SignupCreate {
+            get {
+                return ResourceManager.GetString("SignupCreate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Número de documento.
+        /// </summary>
+        public static string SignupDocument {
+            get {
+                return ResourceManager.GetString("SignupDocument", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Correo electrónico.
+        /// </summary>
+        public static string SignupEmail {
+            get {
+                return ResourceManager.GetString("SignupEmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Género.
+        /// </summary>
+        public static string SignupGender {
+            get {
+                return ResourceManager.GetString("SignupGender", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Femenino.
+        /// </summary>
+        public static string SignupGenderFemale {
+            get {
+                return ResourceManager.GetString("SignupGenderFemale", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Masculino.
+        /// </summary>
+        public static string SignupGenderMale {
+            get {
+                return ResourceManager.GetString("SignupGenderMale", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Seleccione su género.
+        /// </summary>
+        public static string SignupGenderPicker {
+            get {
+                return ResourceManager.GetString("SignupGenderPicker", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Nombre.
+        /// </summary>
+        public static string SignupName {
+            get {
+                return ResourceManager.GetString("SignupName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Contraseña.
+        /// </summary>
+        public static string SignupPassword {
+            get {
+                return ResourceManager.GetString("SignupPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Crear cuenta.
+        /// </summary>
+        public static string SignupTitle {
+            get {
+                return ResourceManager.GetString("SignupTitle", resourceCulture);
+            }
+        }
     }
 }

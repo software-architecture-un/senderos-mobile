@@ -26,6 +26,11 @@
     <Compile Include="$(MSBuildThisFileDirectory)Renderers\Login\LoginButton.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Renderers\MainMaster\MasterNameLabel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Renderers\MainMaster\OptionsButton.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Renderers\Signup\SignupPicker.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Renderers\Signup\SignupTextEntry.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Renderers\Signup\SignupPasswordEntry.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Renderers\Signup\SignupFieldsLabel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Renderers\Signup\SignupTitleLabel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Views\CreateListView.xaml.cs">
       <DependentUpon>CreateListView.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -40,6 +45,10 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\LoginView.xaml.cs">
       <DependentUpon>LoginView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\MessagesPopup.xaml.cs">
+      <DependentUpon>MessagesPopup.xaml</DependentUpon>
+      <SubType>Code</SubType>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\ModifyUserView.xaml.cs">
       <DependentUpon>ModifyUserView.xaml</DependentUpon>
@@ -116,6 +125,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\SignupView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\MessagesPopup.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>

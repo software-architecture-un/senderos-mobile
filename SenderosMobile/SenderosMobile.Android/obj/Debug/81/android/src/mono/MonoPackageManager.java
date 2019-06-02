@@ -111,6 +111,8 @@ class MonoPackageManager_Resources {
 		"ImageCircle.Forms.Plugin.dll",
 		"Plugin.Multilingual.Abstractions.dll",
 		"Plugin.Multilingual.dll",
+		"Rg.Plugins.Popup.dll",
+		"Rg.Plugins.Popup.Droid.dll",
 		"SenderosMobileLanguage.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
 		"Xamarin.Android.Arch.Lifecycle.Common.dll",

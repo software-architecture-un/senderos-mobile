@@ -1,12 +1,208 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SenderosMobile.Views.SignupView">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Signup"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+             x:Class="SenderosMobile.Views.SignupView"
+             xmlns:local="clr-namespace:SenderosMobile"
+             xmlns:translator="clr-namespace:SenderosMobile.Helpers"
+             BackgroundColor="#2B303A">
+    <ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Frame
+                Grid.Row="0"
+                Grid.Column="0"
+                Grid.ColumnSpan="6"
+                
+                Margin="10,10,10,10"
+                BackgroundColor="#7C7C7C"
+                CornerRadius="10">
+
+                <local:SignupTitleLabel
+                    Text="{translator:Translate SignupTitle}"/>
+            </Frame>
+
+            <local:SignupFieldsLabel
+                Grid.Row="1"
+                Grid.Column="0"
+                Grid.ColumnSpan="6"
+                
+                Margin="20,10,20,0"
+                Text="{translator:Translate SignupName}"
+                VerticalOptions="CenterAndExpand" />
+            <local:SignupTextEntry
+                Grid.Row="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="6"
+                
+                Margin="20,0,20,0"
+                HorizontalOptions="Fill"
+                Keyboard="Text"
+                Placeholder=""
+                VerticalOptions="CenterAndExpand" />
+
+            <local:SignupFieldsLabel
+                Grid.Row="3"
+                Grid.Column="0"
+                Grid.ColumnSpan="6"
+                
+                Margin="20,10,20,0"
+                Text="{translator:Translate SignupDocument}"
+                VerticalOptions="CenterAndExpand" />
+            <local:SignupTextEntry
+                Grid.Row="4"
+                Grid.Column="0"
+                Grid.ColumnSpan="6"
+                
+                Margin="20,0,20,0"
+                HorizontalOptions="Fill"
+                Keyboard="Numeric"
+                Placeholder=""
+                VerticalOptions="CenterAndExpand" />
+
+            <local:SignupFieldsLabel
+                Grid.Row="5"
+                Grid.Column="0"
+                Grid.ColumnSpan="6"
+                
+                Margin="20,10,20,0"
+                Text="{translator:Translate SignupAge}"
+                VerticalOptions="CenterAndExpand" />
+            <local:SignupPicker
+                x:Name="AgePicker"
+                Grid.Row="6"
+                Grid.Column="1"
+                Grid.ColumnSpan="4"
+                
+                Margin="20,0,20,0"
+                HorizontalOptions="Fill"
+                Title="{translator:Translate SignupAgePicker}"
+                VerticalOptions="CenterAndExpand" />
+
+            <local:SignupFieldsLabel
+                Grid.Row="7"
+                Grid.Column="0"
+                Grid.ColumnSpan="6"
+                
+                Margin="20,10,20,0"
+                Text="{translator:Translate SignupEmail}"
+                VerticalOptions="CenterAndExpand" />
+            <local:SignupTextEntry
+                Grid.Row="8"
+                Grid.Column="0"
+                Grid.ColumnSpan="6"
+                
+                Margin="20,0,20,0"
+                HorizontalOptions="Fill"
+                Keyboard="Email"
+                Placeholder=""
+                VerticalOptions="CenterAndExpand" />
+
+            <local:SignupFieldsLabel
+                Grid.Row="9"
+                Grid.Column="0"
+                Grid.ColumnSpan="6"
+                
+                Margin="20,10,20,0"
+                Text="{translator:Translate SignupGender}"
+                VerticalOptions="CenterAndExpand" />
+            <local:SignupPicker
+                x:Name="GenderPicker"
+                Grid.Row="10"
+                Grid.Column="1"
+                Grid.ColumnSpan="4"
+                
+                Margin="20,0,20,0"
+                HorizontalOptions="Fill"
+                Title="{translator:Translate SignupGenderPicker}"
+                VerticalOptions="CenterAndExpand" />
+
+            <local:SignupFieldsLabel
+                Grid.Row="11"
+                Grid.Column="0"
+                Grid.ColumnSpan="6"
+                
+                Margin="20,10,20,0"
+                Text="{translator:Translate SignupPassword}"
+                VerticalOptions="CenterAndExpand" />
+            <local:SignupPasswordEntry
+                Grid.Row="12"
+                Grid.Column="0"
+                Grid.ColumnSpan="6"
+                
+                Margin="20,0,20,0"
+                HorizontalOptions="Fill"
+                IsPassword="True"
+                Keyboard="Text"
+                Placeholder=""
+                VerticalOptions="CenterAndExpand" />
+
+            <local:SignupFieldsLabel
+                Grid.Row="13"
+                Grid.Column="0"
+                Grid.ColumnSpan="6"
+                
+                Margin="20,10,20,0"
+                Text="{translator:Translate SignupConfirmPassword}"
+                VerticalOptions="CenterAndExpand" />
+            <local:SignupPasswordEntry
+                Grid.Row="14"
+                Grid.Column="0"
+                Grid.ColumnSpan="6"
+                
+                Margin="20,0,20,0"
+                HorizontalOptions="Fill"
+                IsPassword="True"
+                Keyboard="Text"
+                Placeholder=""
+                VerticalOptions="CenterAndExpand" />
+
+            <local:LoginButton
+                 Grid.Row="15"
+                 Grid.Column="0"
+                 Grid.ColumnSpan="3"
+                
+                Margin="30,20,20,20"
+                HorizontalOptions="Fill"
+                Text="{translator:Translate SignupCreate}"
+                VerticalOptions="CenterAndExpand"
+                Clicked="SignupClicked"/>
+
+            <local:BackButton
+                 Grid.Row="15"
+                 Grid.Column="3"
+                 Grid.ColumnSpan="3"
+                
+                Margin="20,20,30,20"
+                HorizontalOptions="Fill"
+                Text="{translator:Translate SignupBack}"
+                VerticalOptions="CenterAndExpand"
+                Clicked="BackClicked"/>
+        </Grid>
+    </ScrollView>
 </ContentPage>

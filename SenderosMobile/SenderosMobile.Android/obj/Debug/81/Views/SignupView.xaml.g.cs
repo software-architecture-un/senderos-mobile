@@ -18,8 +18,16 @@ namespace SenderosMobile.Views {
     public partial class SignupView : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::SenderosMobile.SignupPicker AgePicker;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::SenderosMobile.SignupPicker GenderPicker;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(SignupView));
+            AgePicker = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::SenderosMobile.SignupPicker>(this, "AgePicker");
+            GenderPicker = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::SenderosMobile.SignupPicker>(this, "GenderPicker");
         }
     }
 }
