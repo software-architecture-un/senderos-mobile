@@ -76,8 +76,7 @@ namespace SenderosMobile
                 }
             }
         }
-
-        //PopupButton
+        
         private void PopupButtonClicked(object sender, EventArgs e)
         {
             switch (pressOrigin)
