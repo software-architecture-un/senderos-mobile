@@ -18,8 +18,20 @@ namespace SenderosMobile {
     public partial class MessagesPopup : global::Rg.Plugins.Popup.Pages.PopupPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Image PopupImage;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::SenderosMobile.FieldsLabel PopupMessage;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::SenderosMobile.LoginButton PopupButton;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MessagesPopup));
+            PopupImage = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Image>(this, "PopupImage");
+            PopupMessage = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::SenderosMobile.FieldsLabel>(this, "PopupMessage");
+            PopupButton = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::SenderosMobile.LoginButton>(this, "PopupButton");
         }
     }
 }

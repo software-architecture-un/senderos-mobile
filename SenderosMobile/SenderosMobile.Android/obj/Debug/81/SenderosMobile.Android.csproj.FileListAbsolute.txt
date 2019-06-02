@@ -45,6 +45,8 @@ C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobile\SenderosMobile
 C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobile\SenderosMobile.Android\obj\Debug\81\res\mipmap-xxxhdpi\launcher_foreground.png
 C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobile\SenderosMobile.Android\obj\Debug\81\res\drawable-xhdpi\worldlogo.png
 C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobile\SenderosMobile.Android\obj\Debug\81\res\drawable-xhdpi\defaultuser.png
+C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobile\SenderosMobile.Android\obj\Debug\81\res\drawable-xhdpi\cross.png
+C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobile\SenderosMobile.Android\obj\Debug\81\res\drawable-xhdpi\check.png
 C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobile\SenderosMobile.Android\obj\Debug\81\R.cs.flag
 C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobile\SenderosMobile.Android\obj\Debug\81\R.txt
 C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobile\SenderosMobile.Android\obj\Debug\81\uploadflags.txt

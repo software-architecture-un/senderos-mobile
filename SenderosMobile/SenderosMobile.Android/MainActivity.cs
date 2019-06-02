@@ -23,6 +23,7 @@ namespace SenderosMobile.Droid
             LoadApplication(new App());
 
             ImageCircleRenderer.Init();
+            Rg.Plugins.Popup.Popup.Init(this, savedInstanceState);
         }
 
         public override void OnBackPressed()

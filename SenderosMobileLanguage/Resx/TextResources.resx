@@ -168,6 +168,15 @@
   <data name="MainMasterSeeLists" xml:space="preserve">
     <value>Ver listas</value>
   </data>
+  <data name="PopupAcceptButton" xml:space="preserve">
+    <value>Aceptar</value>
+  </data>
+  <data name="PopupMessage1Error" xml:space="preserve">
+    <value>Datos erróneos</value>
+  </data>
+  <data name="PopupMessage1Success" xml:space="preserve">
+    <value>Usuaro creado exitosamente</value>
+  </data>
   <data name="SignupAge" xml:space="preserve">
     <value>Edad</value>
   </data>

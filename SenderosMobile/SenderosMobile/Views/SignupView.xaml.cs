@@ -49,8 +49,8 @@ namespace SenderosMobile.Views
 
         private void SignupClicked(object sender, EventArgs e)
         {
-            MessagesPopup messagesPopup = new MessagesPopup();
-            Navigation.PushModalAsync(messagesPopup);
+            MessagesPopup messagesPopup = new MessagesPopup(true, 1);
+            PopupNavigation.PushAsync(messagesPopup);
         }
     }
 }

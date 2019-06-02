@@ -214,6 +214,33 @@ namespace SenderosMobileLanguage.Resx {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Aceptar.
+        /// </summary>
+        public static string PopupAcceptButton {
+            get {
+                return ResourceManager.GetString("PopupAcceptButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Datos erróneos.
+        /// </summary>
+        public static string PopupMessage1Error {
+            get {
+                return ResourceManager.GetString("PopupMessage1Error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Usuaro creado exitosamente.
+        /// </summary>
+        public static string PopupMessage1Success {
+            get {
+                return ResourceManager.GetString("PopupMessage1Success", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Edad.
         /// </summary>
         public static string SignupAge {

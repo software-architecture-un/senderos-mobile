@@ -2346,7 +2346,13 @@ namespace SenderosMobile.Droid
 			public const int avd_show_password = 2131296341;
 			
 			// aapt resource value: 0x7F010002
-			public const int defaultuser = 2130771970;
+			public const int check = 2130771970;
+			
+			// aapt resource value: 0x7F010003
+			public const int cross = 2130771971;
+			
+			// aapt resource value: 0x7F010004
+			public const int defaultuser = 2130771972;
 			
 			// aapt resource value: 0x7F090056
 			public const int design_bottom_navigation_item_background = 2131296342;
@@ -3002,8 +3008,8 @@ namespace SenderosMobile.Droid
 			// aapt resource value: 0x7F09006A
 			public const int tooltip_frame_light = 2131296362;
 			
-			// aapt resource value: 0x7F010003
-			public const int worldlogo = 2130771971;
+			// aapt resource value: 0x7F010005
+			public const int worldlogo = 2130771973;
 			
 			static Drawable()
 			{
