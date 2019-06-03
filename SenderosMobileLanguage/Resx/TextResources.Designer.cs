@@ -61,6 +61,42 @@ namespace SenderosMobileLanguage.Resx {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Eliminar cuenta.
+        /// </summary>
+        public static string DeleteAccountButton {
+            get {
+                return ResourceManager.GetString("DeleteAccountButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Confirmar contraseña.
+        /// </summary>
+        public static string DeleteAccountConfirmPassword {
+            get {
+                return ResourceManager.GetString("DeleteAccountConfirmPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a ¿Está seguro que quiere eliminar su cuenta?.
+        /// </summary>
+        public static string DeleteAccountMessage {
+            get {
+                return ResourceManager.GetString("DeleteAccountMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Contraseña.
+        /// </summary>
+        public static string DeleteAccountPassword {
+            get {
+                return ResourceManager.GetString("DeleteAccountPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Iniciar sesión.
         /// </summary>
         public static string LandingButtonSignIn {
@@ -237,6 +273,24 @@ namespace SenderosMobileLanguage.Resx {
         public static string PopupMessage1Success {
             get {
                 return ResourceManager.GetString("PopupMessage1Success", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a No se pudo eliminar la cuenta (Datos erróneos).
+        /// </summary>
+        public static string PopupMessage2Error {
+            get {
+                return ResourceManager.GetString("PopupMessage2Error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Cuenta eliminada exitosamente.
+        /// </summary>
+        public static string PopupMessage2Success {
+            get {
+                return ResourceManager.GetString("PopupMessage2Success", resourceCulture);
             }
         }
         

@@ -17,6 +17,15 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Helpers\TranslateExtension.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Activity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Image.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Place.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\PlaceList.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Trail.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\User.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Renderers\DeleteAccount\DeleteAccountButton.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Renderers\DeleteAccount\DeleteAccountLabel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Renderers\DeleteAccount\DeleteAccountPasswordEntry.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Renderers\Login\PasswordEntry.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Renderers\Login\FieldsLabel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Renderers\Login\TitleLabel.cs" />

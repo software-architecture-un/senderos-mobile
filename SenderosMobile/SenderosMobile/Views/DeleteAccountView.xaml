@@ -2,14 +2,69 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SenderosMobile.Views.DeleteAccountView"
+             xmlns:local="clr-namespace:SenderosMobile"
              xmlns:translator="clr-namespace:SenderosMobile.Helpers"
              Title="{translator:Translate MainMasterDeleteAccount}"
-             BackgroundColor="#7C7C7C">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Delete Account"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+             BackgroundColor="#EEE5E9">
+
+    <AbsoluteLayout>
+        <Image
+            Margin="20,0,20,30"
+            AbsoluteLayout.LayoutBounds=".5,.0,.4,.4"
+            AbsoluteLayout.LayoutFlags="All"
+            Source="usercross.png">
+            
+        </Image>
+
+        <local:DeleteAccountLabel
+          Margin="20,0,20,0"
+          AbsoluteLayout.LayoutBounds=".5,.3,1,.1"
+          AbsoluteLayout.LayoutFlags="All"
+          Text="{translator:Translate DeleteAccountMessage}"
+          VerticalOptions="CenterAndExpand" />
+
+        <local:DeleteAccountLabel
+          Margin="20,0,20,0"
+          AbsoluteLayout.LayoutBounds=".5,.5,1,.1"
+          AbsoluteLayout.LayoutFlags="All"
+          Text="{translator:Translate DeleteAccountPassword}"
+          VerticalOptions="CenterAndExpand" />
+
+        <local:DeleteAccountPasswordEntry
+            Margin="20,0,20,0"
+            AbsoluteLayout.LayoutBounds=".5,.6,1,.1"
+            AbsoluteLayout.LayoutFlags="All"
+            HorizontalOptions="Fill"
+            Keyboard="Text"
+            IsPassword="True"
+            Placeholder=""
+            VerticalOptions="CenterAndExpand" />
+
+        <local:DeleteAccountLabel
+          Margin="20,10,20,0"
+          AbsoluteLayout.LayoutBounds=".5,.7,1,.1"
+          AbsoluteLayout.LayoutFlags="All"
+          Text="{translator:Translate DeleteAccountConfirmPassword}"
+          VerticalOptions="CenterAndExpand" />
+
+        <local:DeleteAccountPasswordEntry
+            Margin="20,0,20,0"
+            AbsoluteLayout.LayoutBounds=".5,.8,1,.1"
+            AbsoluteLayout.LayoutFlags="All"
+            HorizontalOptions="Fill"
+            IsPassword="True"
+            Keyboard="Text"
+            Placeholder=""
+            VerticalOptions="CenterAndExpand" />
+
+        <local:DeleteAccountButton
+            Margin="20,0,20,0"
+            AbsoluteLayout.LayoutBounds=".5,.95,.5,.1"
+            AbsoluteLayout.LayoutFlags="All"
+            HorizontalOptions="Fill"
+            Text="{translator:Translate DeleteAccountButton}"
+            VerticalOptions="CenterAndExpand"
+            Clicked="DeleteAccountClicked"/>
+    </AbsoluteLayout>
+
 </ContentPage>
