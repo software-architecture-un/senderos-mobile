@@ -175,10 +175,16 @@
     <value>Modificar perfil</value>
   </data>
   <data name="MainMasterPlaces" xml:space="preserve">
-    <value>Lugares</value>
+    <value>Actividades</value>
   </data>
   <data name="MainMasterSeeLists" xml:space="preserve">
-    <value>Ver listas</value>
+    <value>Listas</value>
+  </data>
+  <data name="PlacesCalificationText" xml:space="preserve">
+    <value>Calificación</value>
+  </data>
+  <data name="PlacesVisitsText" xml:space="preserve">
+    <value>Visitas</value>
   </data>
   <data name="PopupAcceptButton" xml:space="preserve">
     <value>Aceptar</value>
@@ -194,6 +200,9 @@
   </data>
   <data name="PopupMessage2Success" xml:space="preserve">
     <value>Cuenta eliminada exitosamente</value>
+  </data>
+  <data name="SeeListsPlacesText" xml:space="preserve">
+    <value>Lugares: </value>
   </data>
   <data name="SignupAge" xml:space="preserve">
     <value>Edad</value>

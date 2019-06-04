@@ -35,6 +35,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Renderers\Login\LoginButton.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Renderers\MainMaster\MasterNameLabel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Renderers\MainMaster\OptionsButton.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Renderers\SeeLists\SeeListsTitleLabel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Renderers\Signup\SignupPicker.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Renderers\Signup\SignupTextEntry.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Renderers\Signup\SignupPasswordEntry.cs" />

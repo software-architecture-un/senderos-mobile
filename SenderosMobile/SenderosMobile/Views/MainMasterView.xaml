@@ -42,19 +42,19 @@
 
         <local:OptionsButton
             Margin="0,10,0,10"
-            AbsoluteLayout.LayoutBounds=".5,.5,1,.1"
+            AbsoluteLayout.LayoutBounds=".5,.6,1,.1"
             AbsoluteLayout.LayoutFlags="All"
             Text="{translator:Translate MainMasterModifyUser}"
             VerticalOptions="CenterAndExpand"
             Clicked="ModifyUserClicked"/>
 
-        <local:OptionsButton
+        <!--<local:OptionsButton
             Margin="0,10,0,10"
             AbsoluteLayout.LayoutBounds=".5,.6,1,.1"
             AbsoluteLayout.LayoutFlags="All"
             Text="{translator:Translate MainMasterCreateList}"
             VerticalOptions="CenterAndExpand"
-            Clicked="CreateListClicked"/>
+            Clicked="CreateListClicked"/>-->
 
         <local:OptionsButton
             Margin="0,10,0,10"

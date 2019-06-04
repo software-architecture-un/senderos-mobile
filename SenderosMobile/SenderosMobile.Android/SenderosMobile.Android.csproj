@@ -83,6 +83,7 @@
     <Compile Include="Renderers\Login\BackButtonRenderer.cs" />
     <Compile Include="Renderers\MainMaster\MasterNameLabelRenderer.cs" />
     <Compile Include="Renderers\MainMaster\OptionsButtonRenderer.cs" />
+    <Compile Include="Renderers\SeeLists\SeeListsTitleLabelRenderer.cs" />
     <Compile Include="Renderers\Signup\SignupPickerRenderer.cs" />
     <Compile Include="Renderers\Signup\SignupPasswordEntryRenderer.cs" />
     <Compile Include="Renderers\Signup\SignupTextEntryRenderer.cs" />
@@ -158,6 +159,12 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-xhdpi\usercross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xhdpi\placelogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xhdpi\activitylogo.png" />
   </ItemGroup>
   <Import Project="..\SenderosMobile\SenderosMobile.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

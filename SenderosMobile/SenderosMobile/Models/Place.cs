@@ -12,7 +12,7 @@ namespace SenderosMobile
         public string Address { get; set; }
         public double Latitude { get; set; }
         public double Longitude { get; set; }
-        public string Image { get; set; }
+        public string PlaceImage { get; set; }
         public int Grade { get; set; }
         public int Visits { get; set; }
     }

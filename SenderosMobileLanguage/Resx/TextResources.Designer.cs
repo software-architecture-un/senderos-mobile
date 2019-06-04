@@ -232,7 +232,7 @@ namespace SenderosMobileLanguage.Resx {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Lugares.
+        ///   Busca una cadena traducida similar a Actividades.
         /// </summary>
         public static string MainMasterPlaces {
             get {
@@ -241,11 +241,29 @@ namespace SenderosMobileLanguage.Resx {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Ver listas.
+        ///   Busca una cadena traducida similar a Listas.
         /// </summary>
         public static string MainMasterSeeLists {
             get {
                 return ResourceManager.GetString("MainMasterSeeLists", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Calificación.
+        /// </summary>
+        public static string PlacesCalificationText {
+            get {
+                return ResourceManager.GetString("PlacesCalificationText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Visitas.
+        /// </summary>
+        public static string PlacesVisitsText {
+            get {
+                return ResourceManager.GetString("PlacesVisitsText", resourceCulture);
             }
         }
         
@@ -291,6 +309,15 @@ namespace SenderosMobileLanguage.Resx {
         public static string PopupMessage2Success {
             get {
                 return ResourceManager.GetString("PopupMessage2Success", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Lugares: .
+        /// </summary>
+        public static string SeeListsPlacesText {
+            get {
+                return ResourceManager.GetString("SeeListsPlacesText", resourceCulture);
             }
         }
         
