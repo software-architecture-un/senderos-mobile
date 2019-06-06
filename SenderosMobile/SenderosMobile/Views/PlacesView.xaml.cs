@@ -1,4 +1,5 @@
-﻿using Rg.Plugins.Popup.Services;
+﻿using Newtonsoft.Json.Linq;
+using Rg.Plugins.Popup.Services;
 using System;
 using System.Collections.Generic;
 using Xamarin.Forms;
@@ -8,64 +9,30 @@ namespace SenderosMobile.Views
 {
     public partial class PlacesView : ContentPage
     {
-        private Activity actividadPrueba1;
-        private Activity actividadPrueba2;
-        private Activity actividadPrueba3;
-        private Activity actividadPrueba4;
-        private Activity actividadPrueba5;
-
-        private List<Activity> actividadesPrueba;
-
         public PlacesView()
         {
             InitializeComponent();
 
-            actividadPrueba1 = new Activity()
-            {
-                Name = "Actividad prueba 1",
-                Description = "Solo test",
-                Calification = 5,
-                Visits = 0,
-            };
-            actividadPrueba2 = new Activity()
-            {
-                Name = "Actividad prueba 2",
-                Description = "Solo test",
-                Calification = 5,
-                Visits = 0,
-            };
-            actividadPrueba3 = new Activity()
-            {
-                Name = "Actividad prueba 3",
-                Description = "Solo test",
-                Calification = 5,
-                Visits = 0,
-            };
-            actividadPrueba4 = new Activity()
-            {
-                Name = "Actividad prueba 4",
-                Description = "Solo test",
-                Calification = 5,
-                Visits = 0,
-            };
-            actividadPrueba5 = new Activity()
-            {
-                Name = "Actividad prueba 5",
-                Description = "Solo test",
-                Calification = 5,
-                Visits = 0,
-            };
+            ActivityResponse activityResponse = new ActivityResponse();
+            JArray response = activityResponse.AllActivities();
+            
+            List<Activity> activitiesMappedFromGraphQL = new List<Activity>();
 
-            actividadesPrueba = new List<Activity>
+            for(int i = 0; i < response.Count; i++)
             {
-                actividadPrueba1,
-                actividadPrueba2,
-                actividadPrueba3,
-                actividadPrueba4,
-                actividadPrueba5,
-            };
+                Activity iteratedActivity = new Activity
+                {
+                    Id = i + 1,
+                    Name = response[i].Value<string>("name"),
+                    Description = response[i].Value<string>("description"),
+                    Calification = response[i].Value<double>("qualification"),
+                    Visits = response[i].Value<int>("visits")
+                };
 
-            ActivitiesList.ItemsSource = actividadesPrueba;
+                activitiesMappedFromGraphQL.Add(iteratedActivity);
+            }
+
+            ActivitiesList.ItemsSource = activitiesMappedFromGraphQL;
         }
 
         private void ListsViewItemTapped(object sender, ItemTappedEventArgs e)

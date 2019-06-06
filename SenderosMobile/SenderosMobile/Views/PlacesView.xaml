@@ -49,12 +49,12 @@
 
                                     <AbsoluteLayout>
                                         <local:SeeListsTitleLabel
-                                            AbsoluteLayout.LayoutBounds=".5,.1,1,.2"
+                                            AbsoluteLayout.LayoutBounds=".5,.1,1,.25"
                                             AbsoluteLayout.LayoutFlags="All"
                                             Text="{Binding Name}"/>
 
                                         <local:DeleteAccountLabel
-                                            AbsoluteLayout.LayoutBounds=".5,.4,1,.5"
+                                            AbsoluteLayout.LayoutBounds=".5,.455,1,.5"
                                             AbsoluteLayout.LayoutFlags="All"
                                             Text="{Binding Description}"/>
 
