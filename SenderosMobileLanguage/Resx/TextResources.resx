@@ -156,6 +156,18 @@
   <data name="LoginEntryPassword" xml:space="preserve">
     <value>Contraseña</value>
   </data>
+  <data name="LoginErrorMessage1" xml:space="preserve">
+    <value>Ningún campo puede estar vacío</value>
+  </data>
+  <data name="LoginErrorMessage2" xml:space="preserve">
+    <value>No se ingresó un correo electrónico válido</value>
+  </data>
+  <data name="LoginErrorMessage3" xml:space="preserve">
+    <value>La contraseña debe tener al menos 6 caracteres</value>
+  </data>
+  <data name="LoginErrorMessage4" xml:space="preserve">
+    <value>Usuario no existente y/o contraseña incorrecta.</value>
+  </data>
   <data name="LoginLabelTitle" xml:space="preserve">
     <value>SENDEROS</value>
   </data>

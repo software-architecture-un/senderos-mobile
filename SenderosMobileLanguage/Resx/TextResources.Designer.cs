@@ -178,6 +178,42 @@ namespace SenderosMobileLanguage.Resx {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Ningún campo puede estar vacío.
+        /// </summary>
+        public static string LoginErrorMessage1 {
+            get {
+                return ResourceManager.GetString("LoginErrorMessage1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a No se ingresó un correo electrónico válido.
+        /// </summary>
+        public static string LoginErrorMessage2 {
+            get {
+                return ResourceManager.GetString("LoginErrorMessage2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a La contraseña debe tener al menos 6 caracteres.
+        /// </summary>
+        public static string LoginErrorMessage3 {
+            get {
+                return ResourceManager.GetString("LoginErrorMessage3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Usuario no existente y/o contraseña incorrecta..
+        /// </summary>
+        public static string LoginErrorMessage4 {
+            get {
+                return ResourceManager.GetString("LoginErrorMessage4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a SENDEROS.
         /// </summary>
         public static string LoginLabelTitle {

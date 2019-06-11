@@ -23,6 +23,11 @@ namespace SenderosMobile
         private string popupMessage2Success;
         private string popupMessage2Error;
 
+        private string loginErrorMessage1;
+        private string loginErrorMessage2;
+        private string loginErrorMessage3;
+        private string loginErrorMessage4;
+
         public MessagesPopup (bool isSuccess, int origin)
 		{
 			InitializeComponent ();
@@ -35,6 +40,11 @@ namespace SenderosMobile
             popupMessage1Error = resourceManager.GetString("PopupMessage1Error");
             popupMessage2Success = resourceManager.GetString("PopupMessage2Success");
             popupMessage2Error = resourceManager.GetString("PopupMessage2Error");
+
+            loginErrorMessage1 = resourceManager.GetString("LoginErrorMessage1");
+            loginErrorMessage2 = resourceManager.GetString("LoginErrorMessage2");
+            loginErrorMessage3 = resourceManager.GetString("LoginErrorMessage3");
+            loginErrorMessage4 = resourceManager.GetString("LoginErrorMessage4");
 
             this.BackgroundColor = Color.FromRgba(0, 0, 0, 0.7);
 
@@ -83,6 +93,18 @@ namespace SenderosMobile
                     case 2: // Crear cuenta
                         this.PopupMessage.Text = popupMessage2Error;
                         break;
+                    case 3: // Login campos vacíos
+                        this.PopupMessage.Text = loginErrorMessage1;
+                        break;
+                    case 4: // Login email sin formato correcto
+                        this.PopupMessage.Text = loginErrorMessage2;
+                        break;
+                    case 5: // Login contraseña corta
+                        this.PopupMessage.Text = loginErrorMessage3;
+                        break;
+                    case 6: // Login email o contraseña incorrectos
+                        this.PopupMessage.Text = loginErrorMessage4;
+                        break;
                     default:
                         this.PopupMessage.Text = "";
                         break;
@@ -121,6 +143,22 @@ namespace SenderosMobile
                         PopupNavigation.PopAsync();
                         break;
                     case 2: // Eliminar cuenta
+
+                        PopupNavigation.PopAsync();
+                        break;
+                    case 3: // Login campos vacíos
+
+                        PopupNavigation.PopAsync();
+                        break;
+                    case 4: // Login email sin formato correcto
+
+                        PopupNavigation.PopAsync();
+                        break;
+                    case 5: // Login contraseña corta
+
+                        PopupNavigation.PopAsync();
+                        break;
+                    case 6: // Login email o contraseña incorrectos
 
                         PopupNavigation.PopAsync();
                         break;

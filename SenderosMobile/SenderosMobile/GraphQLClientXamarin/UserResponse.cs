@@ -18,11 +18,10 @@ namespace SenderosMobile
 
         }
 
-        public JObject JWTResponse()
+        /* Método que envía un query y retorna la respuesta asociada a JWT */
+        public JObject JWTResponse(string email, string password)
         {
-            string email = "dacherreragu@unal.edu.co";
-            string password = "123456";
-
+            /* Query que solicita JWT a partir d eun usuario y una contraseña */
             string query = @"mutation {
               signIn(user: {
                 email: """ + email + "\"" +
@@ -33,21 +32,31 @@ namespace SenderosMobile
               }
             }";
 
-            //string query = @"query {
-            //                    allActivities {
-            //                        name
-            //                        description
-            //                        qualification
-            //                        visits
-            //                    }
-            //               }";
+            GraphQLHttpClient graphQLClient = new GraphQLHttpClient("http://34.66.249.47:5500/graphql"); // GraphQL en Cloud
+            GraphQLResponse graphQLResponse = new GraphQLResponse(); // Respuesta que se obtendrá
 
-            GraphQLHttpClient graphQLClient = new GraphQLHttpClient("http://34.66.249.47:5500/graphql");
-            GraphQLResponse graphQLResponse = new GraphQLResponse();
+            Task.WaitAll( // Espera que se ejecuten todas las tareas asíncronas en su interior para continuar
+                Task.Run( // Ejecuta una tarea
+                    async () => // Expresión Lambda para ejecutar una tarea asíncrona dentro de un método síncrono
+                    {
+                        graphQLResponse = await graphQLClient.SendQueryAsync(query); // Envía el query a GraphQL y obtiene una respuesta
+                    }));
 
-            Task.WaitAll(Task.Run(async () => { graphQLResponse = await graphQLClient.SendQueryAsync(query); }));
+            return graphQLResponse.Data.signIn; // Retorna null si no se crea WJT y un JObtect no vacío (con el JWT) en caso contrario
+        }
 
-            return graphQLResponse.Data.signIn;
+        public bool IsLogged(string email, string password)
+        {
+            JObject response = JWTResponse(email, password); // Envía un query
+
+            if (response == null) // Si no hay JWT
+            {
+                return false;
+            }
+            else // Si se generó JWT
+            {
+                return true;
+            }
         }
     }
 }

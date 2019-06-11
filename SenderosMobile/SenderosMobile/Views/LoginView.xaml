@@ -30,6 +30,7 @@
           VerticalOptions="CenterAndExpand" />
       
       <local:EmailEntry
+            x:Name="EmailEntryField"
             Margin="20,0,20,0"
             AbsoluteLayout.LayoutBounds=".5,.5,1,.1"
             AbsoluteLayout.LayoutFlags="All"
@@ -46,6 +47,7 @@
           VerticalOptions="CenterAndExpand" />
       
         <local:PasswordEntry
+            x:Name="PasswordEntryField"
             Margin="20,0,20,0"
             AbsoluteLayout.LayoutBounds=".5,.675,1,.1"
             AbsoluteLayout.LayoutFlags="All"
