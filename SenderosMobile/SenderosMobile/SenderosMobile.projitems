@@ -17,6 +17,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)GraphQLClientXamarin\ActivityResponse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GraphQLClientXamarin\UserResponse.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helpers\TranslateExtension.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Activity.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Image.cs" />

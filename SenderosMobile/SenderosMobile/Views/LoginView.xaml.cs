@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
+using System;
 using Xamarin.Forms;
 
 namespace SenderosMobile
@@ -8,6 +9,9 @@ namespace SenderosMobile
         public LoginView()
         {
             InitializeComponent();
+
+            UserResponse userResponse = new UserResponse();
+            JObject response = userResponse.JWTResponse();
         }
 
         private void BackClicked(object sender, EventArgs e)
