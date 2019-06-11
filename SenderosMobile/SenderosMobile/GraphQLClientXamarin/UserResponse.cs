@@ -13,6 +13,8 @@ namespace SenderosMobile
 {
     class UserResponse
     {
+        GlobalVariables Variables = new GlobalVariables();
+
         public UserResponse()
         {
 
@@ -21,7 +23,7 @@ namespace SenderosMobile
         /* Método que envía un query y retorna la respuesta asociada a JWT */
         public JObject JWTResponse(string email, string password)
         {
-            /* Query que solicita JWT a partir d eun usuario y una contraseña */
+            /* Query que solicita JWT a partir de un usuario y una contraseña */
             string query = @"mutation {
               signIn(user: {
                 email: """ + email + "\"" +
@@ -32,7 +34,7 @@ namespace SenderosMobile
               }
             }";
 
-            GraphQLHttpClient graphQLClient = new GraphQLHttpClient("http://34.66.249.47:5500/graphql"); // GraphQL en Cloud
+            GraphQLHttpClient graphQLClient = new GraphQLHttpClient(Variables.CloudIP + "graphql"); // GraphQL en Cloud
             GraphQLResponse graphQLResponse = new GraphQLResponse(); // Respuesta que se obtendrá
 
             Task.WaitAll( // Espera que se ejecuten todas las tareas asíncronas en su interior para continuar
@@ -45,17 +47,17 @@ namespace SenderosMobile
             return graphQLResponse.Data.signIn; // Retorna null si no se crea WJT y un JObtect no vacío (con el JWT) en caso contrario
         }
 
-        public bool IsLogged(string email, string password)
+        public string IsLogged(string email, string password)
         {
             JObject response = JWTResponse(email, password); // Envía un query
 
             if (response == null) // Si no hay JWT
             {
-                return false;
+                return "";
             }
             else // Si se generó JWT
             {
-                return true;
+                return response["jwt"].ToString();
             }
         }
     }

@@ -8,6 +8,8 @@ namespace SenderosMobile
 {
     public partial class LoginView : ContentPage
     {
+        GlobalVariables Variables = new GlobalVariables();
+
         public LoginView()
         {
             InitializeComponent();
@@ -24,7 +26,7 @@ namespace SenderosMobile
         {
             UserResponse userResponse = new UserResponse(); // Para hacer queries a User
 
-            Regex regex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$"); // Expresión regular de correo electrónico
+            Regex regex = Variables.EmailFormat; // Expresión regular de correo electrónico
 
             if (EmailEntryField.Text == "" || EmailEntryField.Text == null || PasswordEntryField.Text == "" || PasswordEntryField.Text == null) // Campos vacíos
             {
@@ -36,20 +38,27 @@ namespace SenderosMobile
                 MessagesPopup messagesPopup = new MessagesPopup(false, 4);
                 PopupNavigation.PushAsync(messagesPopup);
             }
-            else if (PasswordEntryField.Text.Length < 6) // Contraseña muy corta
+            else if (PasswordEntryField.Text.Length < Variables.MinLengthPassword) // Contraseña muy corta
             {
                 MessagesPopup messagesPopup = new MessagesPopup(false, 5);
                 PopupNavigation.PushAsync(messagesPopup);
             }
-            else if(!userResponse.IsLogged(EmailEntryField.Text, PasswordEntryField.Text)) // Correo electrónico y/o contraseña incorrectos
+            else
             {
-                MessagesPopup messagesPopup = new MessagesPopup(false, 6);
-                PopupNavigation.PushAsync(messagesPopup);
-            }
-            else // Inicio de sesión correcto con usuario existente y su respectiva contraseña
-            {
-                MainMasterDetailView mainView = new MainMasterDetailView();
-                Application.Current.MainPage = mainView;
+                string jwt = userResponse.IsLogged(EmailEntryField.Text, PasswordEntryField.Text);
+
+                if(jwt == "") // Si no se generó JWT
+                {
+                    MessagesPopup messagesPopup = new MessagesPopup(false, 6);
+                    PopupNavigation.PushAsync(messagesPopup);
+                }
+                else // Inicio de sesión correcto con usuario existente y su respectiva contraseña
+                {
+                    Application.Current.Properties["jwt"] = jwt;
+
+                    MainMasterDetailView mainView = new MainMasterDetailView();
+                    Application.Current.MainPage = mainView;
+                }
             }
         }
     }

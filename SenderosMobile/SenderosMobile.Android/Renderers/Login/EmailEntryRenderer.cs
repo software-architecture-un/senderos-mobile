@@ -32,7 +32,7 @@ namespace SenderosMobile.Droid
                 Control.SetTextColor(Android.Graphics.Color.Black); // Selecciona el color del texto de Entry activado
 
                 Control.SetTextSize(Android.Util.ComplexUnitType.Sp, 16); // Tamaño de la letra del Entry
-                Control.Gravity = GravityFlags.Left; // Alinea a la izquierda el texto que hay dentro del Entry
+                Control.Gravity = GravityFlags.Center; // Alinea a la izquierda el texto que hay dentro del Entry
 
                 Control.SetAllCaps(false); // El texto del Entry ya no será totalmente en mayúsculas
 
