@@ -16,9 +16,7 @@ C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobile\SenderosMobile
 C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobile\SenderosMobile.Android\obj\Debug\81\Views\ModifyUserView.xaml.g.cs
 C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobile\SenderosMobile.Android\obj\Debug\81\Views\MainMasterDetailView.xaml.g.cs
 C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobile\SenderosMobile.Android\obj\Debug\81\Views\DeleteAccountView.xaml.g.cs
-C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobile\SenderosMobile.Android\obj\Debug\81\Views\CreateListView.xaml.g.cs
 C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobile\SenderosMobile.Android\obj\Debug\81\Views\SeeListsView.xaml.g.cs
-C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobile\SenderosMobile.Android\obj\Debug\81\Views\PlacesView.xaml.g.cs
 C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobile\SenderosMobile.Android\obj\Debug\81\Views\SignupView.xaml.g.cs
 C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobile\SenderosMobile.Android\obj\Debug\81\Views\MessagesPopup.xaml.g.cs
 C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobile\SenderosMobile.Android\obj\Debug\81\SenderosMobile.Android.csproj.CoreCompileInputs.cache
@@ -135,6 +133,10 @@ C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobile\SenderosMobile
 C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobile\SenderosMobile.Android\obj\Debug\81\android\assets\Xamarin.Forms.Core.pdb
 C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobile\SenderosMobile.Android\obj\Debug\81\android\assets\Xamarin.Forms.Platform.Android.pdb
 C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobile\SenderosMobile.Android\obj\Debug\81\android\assets\Xamarin.Forms.Xaml.pdb
+C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobile\SenderosMobile.Android\obj\Debug\81\Views\ListsView.xaml.g.cs
+C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobile\SenderosMobile.Android\obj\Debug\81\Views\RoutesView.xaml.g.cs
+C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobile\SenderosMobile.Android\obj\Debug\81\res\drawable-xhdpi\route.png
+C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobile\SenderosMobile.Android\obj\Debug\81\res\drawable-xhdpi\add.png
 C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobile\SenderosMobile.Android\obj\Debug\81\linksrc\Plugin.Multilingual.Abstractions.dll.mdb
 C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobile\SenderosMobile.Android\obj\Debug\81\linksrc\Plugin.Multilingual.dll.mdb
 C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobile\SenderosMobile.Android\obj\Debug\81\linksrc\Rg.Plugins.Popup.Droid.dll.mdb

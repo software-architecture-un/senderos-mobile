@@ -29,8 +29,9 @@ namespace SenderosMobile
                 email: """ + email + "\"" +
                 @"password: """ + password + "\"" +
               @"}) {
-                jwt
+                content
                 message
+                status
               }
             }";
 
@@ -44,10 +45,77 @@ namespace SenderosMobile
                         graphQLResponse = await graphQLClient.SendQueryAsync(query); // Envía el query a GraphQL y obtiene una respuesta
                     }));
 
-            return graphQLResponse.Data.signIn; // Retorna null si no se crea WJT y un JObtect no vacío (con el JWT) en caso contrario
+            return graphQLResponse.Data.signIn; // Retorna null si no se crea JWT y un JObtect no vacío (con el JWT) en caso contrario
         }
 
-        public string IsLogged(string email, string password)
+        /* Método para comprobar la validez del JWT */
+        public JObject VerifyJWT(string jwt)
+        {
+            /* Query para corroborar la validez de un token */
+            string query = @"mutation {
+              verifyToken(jwt: {
+                jwt: """ + jwt + "\"" +
+              @"}) {
+                content
+                message
+                status
+                }
+            }";
+
+            GraphQLHttpClient graphQLClient = new GraphQLHttpClient(Variables.CloudIP + "graphql"); // GraphQL en Cloud
+            GraphQLResponse graphQLResponse = new GraphQLResponse(); // Respuesta que se obtendrá
+
+            Task.WaitAll( // Espera que se ejecuten todas las tareas asíncronas en su interior para continuar
+               Task.Run( // Ejecuta una tarea
+                   async () => // Expresión Lambda para ejecutar una tarea asíncrona dentro de un método síncrono
+                    {
+                       graphQLResponse = await graphQLClient.SendQueryAsync(query); // Envía el query a GraphQL y obtiene una respuesta
+                    }));
+
+            return graphQLResponse.Data.verifyToken; 
+        }
+
+        /* Método para comprobar la validez del JWT */
+        public JObject UserByEmail(string email)
+        {
+            /* Query para corroborar la validez de un token */
+            string query = @"mutation {
+              userByEmail(email:
+              {
+                email: """ + email + "\"" +
+              @"})
+              {
+                 content
+                {
+                  id
+                  name
+                  document
+                  age
+                  email
+                  password_digest
+                }
+                message
+                status
+              }
+            }";
+
+            GraphQLHttpClient graphQLClient = new GraphQLHttpClient(Variables.CloudIP + "graphql"); // GraphQL en Cloud
+            GraphQLResponse graphQLResponse = new GraphQLResponse(); // Respuesta que se obtendrá
+
+            Task.WaitAll( // Espera que se ejecuten todas las tareas asíncronas en su interior para continuar
+                Task.Run( // Ejecuta una tarea
+                    async () => // Expresión Lambda para ejecutar una tarea asíncrona dentro de un método síncrono
+                    {
+                        graphQLResponse = await graphQLClient.SendQueryAsync(query); // Envía el query a GraphQL y obtiene una respuesta
+                    }));
+
+            return graphQLResponse.Data.userByEmail;
+        }
+
+        /*  */
+
+        /* Método que responde con el JWT correspondiente al inicio de sesión */
+        public string LogIn(string email, string password)
         {
             JObject response = JWTResponse(email, password); // Envía un query
 
@@ -57,8 +125,40 @@ namespace SenderosMobile
             }
             else // Si se generó JWT
             {
-                return response["jwt"].ToString();
+                return response["content"].ToString();
             }
+        }
+
+        /*  */
+        public bool VerifyToken(string jwt)
+        {
+            JObject response = VerifyJWT(jwt); // Envía un query
+
+            if (response == null) // Si JWT no es válido
+            {
+                return false;
+            }
+            else // Si JWT es válido
+            {
+                return true;
+            }
+        }
+
+        public User UserEmail(string email)
+        {
+            JObject response = UserByEmail(email); // Envía un query
+            JToken contentResponse = response["content"];
+
+            User mappedUser = new User
+            {
+                Id = contentResponse.Value<long>("id"),
+                Name = contentResponse.Value<string>("name"),
+                Document = contentResponse.Value<string>("document"),
+                Age = contentResponse.Value<int>("age"),
+                Email = contentResponse.Value<string>("email")
+            };
+
+            return mappedUser;
         }
     }
 }

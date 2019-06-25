@@ -9,7 +9,13 @@ namespace SenderosMobile
 		public MainMasterView ()
 		{
 			InitializeComponent ();
-		}
+
+            UserResponse userResponse = new UserResponse();
+
+            User currentUser = userResponse.UserEmail(Application.Current.Properties["email"].ToString());
+
+            NameLogged.Text = currentUser.Name;
+        }
 
         private void ModifyUserClicked(object sender, EventArgs e)
         {
@@ -17,32 +23,23 @@ namespace SenderosMobile
             App.MasterDetail.Detail = new NavigationPage(new ModifyUserView());
         }
 
-        private void CreateListClicked(object sender, EventArgs e)
+        private void ListsClicked(object sender, EventArgs e)
         {
             App.MasterDetail.IsPresented = false;
-            App.MasterDetail.Detail = new NavigationPage(new CreateListView());
+            App.MasterDetail.Detail = new NavigationPage(new ListsView());
         }
 
-        private void SeeListsClicked(object sender, EventArgs e)
+        private void RoutesClicked(object sender, EventArgs e)
         {
             App.MasterDetail.IsPresented = false;
-            App.MasterDetail.Detail = new NavigationPage(new SeeListsView());
-        }
-
-        private void PlacesClicked(object sender, EventArgs e)
-        {
-            App.MasterDetail.IsPresented = false;
-            App.MasterDetail.Detail = new NavigationPage(new PlacesView());
-        }
-
-        private void DeleteAccountClicked(object sender, EventArgs e)
-        {
-            App.MasterDetail.IsPresented = false;
-            App.MasterDetail.Detail = new NavigationPage(new DeleteAccountView());
+            App.MasterDetail.Detail = new NavigationPage(new RoutesView());
         }
 
         private void LogoutClicked(object sender, EventArgs e)
         {
+            Application.Current.Properties["jwt"] = "";
+            Application.Current.Properties["email"] = "";
+
             LandingView loginView = new LandingView();
             Application.Current.MainPage = loginView;
         }

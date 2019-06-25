@@ -45,7 +45,7 @@ namespace SenderosMobile
             }
             else
             {
-                string jwt = userResponse.IsLogged(EmailEntryField.Text, PasswordEntryField.Text);
+                string jwt = userResponse.LogIn(EmailEntryField.Text, PasswordEntryField.Text);
 
                 if(jwt == "") // Si no se generó JWT
                 {
@@ -55,6 +55,7 @@ namespace SenderosMobile
                 else // Inicio de sesión correcto con usuario existente y su respectiva contraseña
                 {
                     Application.Current.Properties["jwt"] = jwt;
+                    Application.Current.Properties["email"] = EmailEntryField.Text;
 
                     MainMasterDetailView mainView = new MainMasterDetailView();
                     Application.Current.MainPage = mainView;

@@ -18,8 +18,12 @@ namespace SenderosMobile {
     public partial class MainMasterView : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::SenderosMobile.MasterNameLabel NameLogged;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MainMasterView));
+            NameLogged = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::SenderosMobile.MasterNameLabel>(this, "NameLogged");
         }
     }
 }

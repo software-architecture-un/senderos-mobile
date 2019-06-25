@@ -29,10 +29,10 @@
                 </controls:CircleImage>
 
                 <local:MasterNameLabel
+                    x:Name="NameLogged"
                     Margin="20,0,20,0"
                     AbsoluteLayout.LayoutBounds=".5,.9,1,.2"
                     AbsoluteLayout.LayoutFlags="All"
-                    Text="David Herrera (Prueba)"
                     TextColor="Black"
                     VerticalOptions="CenterAndExpand"/> 
             </AbsoluteLayout>
@@ -40,45 +40,29 @@
 
         
 
-        <!--<local:OptionsButton
+        <local:OptionsButton
             Margin="0,10,0,10"
-            AbsoluteLayout.LayoutBounds=".5,.6,1,.1"
+            AbsoluteLayout.LayoutBounds=".5,.5,1,.1"
             AbsoluteLayout.LayoutFlags="All"
             Text="{translator:Translate MainMasterModifyUser}"
             VerticalOptions="CenterAndExpand"
-            Clicked="ModifyUserClicked"/>-->
-
-        <!--<local:OptionsButton
-            Margin="0,10,0,10"
-            AbsoluteLayout.LayoutBounds=".5,.6,1,.1"
-            AbsoluteLayout.LayoutFlags="All"
-            Text="{translator:Translate MainMasterCreateList}"
-            VerticalOptions="CenterAndExpand"
-            Clicked="CreateListClicked"/>-->
-
-        <local:OptionsButton
-            Margin="0,10,0,10"
-            AbsoluteLayout.LayoutBounds=".5,.6,1,.1"
-            AbsoluteLayout.LayoutFlags="All"
-            Text="{translator:Translate MainMasterSeeLists}"
-            VerticalOptions="CenterAndExpand"
-            Clicked="SeeListsClicked"/>
+            Clicked="ModifyUserClicked"/>
 
         <local:OptionsButton
             Margin="0,10,0,10"
             AbsoluteLayout.LayoutBounds=".5,.7,1,.1"
             AbsoluteLayout.LayoutFlags="All"
-            Text="{translator:Translate MainMasterPlaces}"
+            Text="{translator:Translate MainMasterLists}"
             VerticalOptions="CenterAndExpand"
-            Clicked="PlacesClicked"/>
+            Clicked="ListsClicked"/>
 
         <local:OptionsButton
             Margin="0,10,0,10"
             AbsoluteLayout.LayoutBounds=".5,.8,1,.1"
             AbsoluteLayout.LayoutFlags="All"
-            Text="{translator:Translate MainMasterDeleteAccount}"
+            Text="{translator:Translate MainMasterRoutes}"
             VerticalOptions="CenterAndExpand"
-            Clicked="DeleteAccountClicked"/>
+            Clicked="RoutesClicked"/>
 
         <local:OptionsButton
             Margin="0,10,0,10"

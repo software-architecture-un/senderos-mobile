@@ -8,3 +8,4 @@ C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobileLanguage\obj\De
 C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobileLanguage\obj\Debug\netstandard2.0\SenderosMobileLanguage.AssemblyInfo.cs
 C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobileLanguage\obj\Debug\netstandard2.0\SenderosMobileLanguage.dll
 C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobileLanguage\obj\Debug\netstandard2.0\SenderosMobileLanguage.pdb
+C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobileLanguage\obj\Debug\netstandard2.0\SenderosMobileLanguage.csprojAssemblyReference.cache

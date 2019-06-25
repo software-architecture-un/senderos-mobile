@@ -7,7 +7,8 @@ namespace SenderosMobile
 {
     class GlobalVariables
     {
-        public string CloudIP = "http://35.232.93.124:5500/";
+        //public string CloudIP = "http://35.196.16.91/";
+        public string CloudIP = "http://34.94.104.0/";
 
         public int MinLengthPassword = 6;
 

@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SenderosMobile.Views.RoutesView"
+             xmlns:local="clr-namespace:SenderosMobile"
+             xmlns:translator="clr-namespace:SenderosMobile.Helpers"
+             Title="{translator:Translate MainMasterRoutes}"
+             BackgroundColor="#7C7C7C">
+
+    <AbsoluteLayout>
+
+        <ListView
+                x:Name="ActivitiesList"
+                Margin="10,10,10,10"
+                AbsoluteLayout.LayoutBounds=".5,.5,1,1"
+                AbsoluteLayout.LayoutFlags="All"
+                HasUnevenRows = "true"
+                ItemTapped="ListsViewItemTapped">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell Height="100">
+                        <Frame
+                            Margin="0,0,0,10"
+                            Padding="0,0,0,0"
+                            BackgroundColor="#EEE5E9"
+                            BorderColor="#92DCE5"
+                            CornerRadius="30">
+
+                            <AbsoluteLayout>
+                                <Frame
+                                    Margin="0,0,10,10"
+                                    Padding="0,0,0,0"
+                                    AbsoluteLayout.LayoutBounds=".1,.5,.25,.6"
+                                    AbsoluteLayout.LayoutFlags="All"
+                                    BackgroundColor="Transparent">
+
+                                    <Image
+                                        Source="route.png">
+
+                                    </Image>
+                                </Frame>
+
+                                <Frame
+                                    Margin="0,0,0,0"
+                                    Padding="0,0,0,0"
+                                    AbsoluteLayout.LayoutBounds="1,.5,.7,1"
+                                    AbsoluteLayout.LayoutFlags="All"
+                                    BackgroundColor="Transparent">
+
+                                    <AbsoluteLayout>
+                                        <local:SeeListsTitleLabel
+                                            AbsoluteLayout.LayoutBounds=".5,.5,1,.25"
+                                            AbsoluteLayout.LayoutFlags="All"
+                                            Text="{Binding Name}"/>
+                                    </AbsoluteLayout>
+                                </Frame>
+
+                                <!--<Button x:Name="Button1"
+                                    AbsoluteLayout.LayoutBounds="0,0,1,1"
+                                    AbsoluteLayout.LayoutFlags="All"
+                                    BorderRadius="20"
+                                    BorderColor="DarkGray"
+                                    IsEnabled="True"
+                                    CommandParameter="{Binding Id}"
+                                    Clicked="OpenList">
+                                </Button>-->
+                                
+                            </AbsoluteLayout>
+
+                        </Frame>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <Image
+            AbsoluteLayout.LayoutBounds=".9,.9,.2,.2"
+            AbsoluteLayout.LayoutFlags="All"
+            
+            Source="add.png"/>
+        <Button
+            AbsoluteLayout.LayoutBounds=".9,.9,.2,.2"
+            AbsoluteLayout.LayoutFlags="All"
+            
+            x:Name="AddButton"
+            BackgroundColor="Transparent"/>
+
+    </AbsoluteLayout>
+
+</ContentPage>

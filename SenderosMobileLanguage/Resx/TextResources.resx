@@ -180,6 +180,9 @@
   <data name="MainMasterDeleteAccount" xml:space="preserve">
     <value>Eliminar cuenta</value>
   </data>
+  <data name="MainMasterLists" xml:space="preserve">
+    <value>Listas</value>
+  </data>
   <data name="MainMasterLogout" xml:space="preserve">
     <value>Cerrar sesión</value>
   </data>
@@ -188,6 +191,9 @@
   </data>
   <data name="MainMasterPlaces" xml:space="preserve">
     <value>Actividades</value>
+  </data>
+  <data name="MainMasterRoutes" xml:space="preserve">
+    <value>Rutas</value>
   </data>
   <data name="MainMasterSeeLists" xml:space="preserve">
     <value>Listas</value>

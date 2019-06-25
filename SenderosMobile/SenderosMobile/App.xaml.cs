@@ -16,8 +16,23 @@ namespace SenderosMobile
 
             ImageCircleRenderer.Init();
 
-            LandingView page = new LandingView();
-            MainPage = page;
+            UserResponse userResponse = new UserResponse(); // Para hacer queries a User
+
+            if(Current.Properties["jwt"] == null || Current.Properties["jwt"].ToString() == "")
+            {
+                MainPage = new LandingView();
+            }
+            else
+            {
+                if(userResponse.VerifyToken(Current.Properties["jwt"].ToString()))
+                {
+                    MainPage = new MainMasterDetailView();
+                }
+                else
+                {
+                    MainPage = new LandingView();
+                }
+            }
         }
 
         protected override void OnStart()

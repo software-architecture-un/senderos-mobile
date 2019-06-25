@@ -18,6 +18,7 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Global\GlobalVariables.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)GraphQLClientXamarin\ActivityResponse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GraphQLClientXamarin\TrailResponse.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)GraphQLClientXamarin\UserResponse.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helpers\TranslateExtension.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Activity.cs" />
@@ -44,8 +45,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)Renderers\Signup\SignupPasswordEntry.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Renderers\Signup\SignupFieldsLabel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Renderers\Signup\SignupTitleLabel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Views\CreateListView.xaml.cs">
-      <DependentUpon>CreateListView.xaml</DependentUpon>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ListsView.xaml.cs">
+      <DependentUpon>ListsView.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\DeleteAccountView.xaml.cs">
@@ -75,8 +76,8 @@
       <DependentUpon>MainMasterView.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Views\PlacesView.xaml.cs">
-      <DependentUpon>PlacesView.xaml</DependentUpon>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\RoutesView.xaml.cs">
+      <DependentUpon>RoutesView.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\SeeListsView.xaml.cs">
@@ -119,7 +120,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\CreateListView.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\ListsView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
@@ -131,7 +132,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\PlacesView.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\RoutesView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>

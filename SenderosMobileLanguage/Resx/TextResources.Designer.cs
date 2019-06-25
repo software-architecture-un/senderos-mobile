@@ -250,6 +250,15 @@ namespace SenderosMobileLanguage.Resx {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Listas.
+        /// </summary>
+        public static string MainMasterLists {
+            get {
+                return ResourceManager.GetString("MainMasterLists", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Cerrar sesión.
         /// </summary>
         public static string MainMasterLogout {
@@ -273,6 +282,15 @@ namespace SenderosMobileLanguage.Resx {
         public static string MainMasterPlaces {
             get {
                 return ResourceManager.GetString("MainMasterPlaces", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Rutas.
+        /// </summary>
+        public static string MainMasterRoutes {
+            get {
+                return ResourceManager.GetString("MainMasterRoutes", resourceCulture);
             }
         }
         
