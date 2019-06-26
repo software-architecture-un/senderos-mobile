@@ -13,8 +13,8 @@
 namespace SenderosMobile {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\David Herrera\\source\\repos\\SenderosMobile\\SenderosMobile\\SenderosMobile\\" +
-        "Views\\LandingView.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\David Herrera\\source\\senderos-mobile\\SenderosMobile\\SenderosMobile\\Views" +
+        "\\LandingView.xaml")]
     public partial class LandingView : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

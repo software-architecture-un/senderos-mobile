@@ -13,8 +13,8 @@
 namespace SenderosMobile.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\David Herrera\\source\\repos\\SenderosMobile\\SenderosMobile\\SenderosMobile\\" +
-        "Views\\SeeListsView.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\David Herrera\\source\\senderos-mobile\\SenderosMobile\\SenderosMobile\\Views" +
+        "\\SeeListsView.xaml")]
     public partial class SeeListsView : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

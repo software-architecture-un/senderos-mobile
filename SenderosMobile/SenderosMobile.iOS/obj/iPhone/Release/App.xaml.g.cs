@@ -13,8 +13,8 @@
 namespace SenderosMobile {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\David Herrera\\source\\repos\\SenderosMobile\\SenderosMobile\\SenderosMobile\\" +
-        "App.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\David Herrera\\source\\senderos-mobile\\SenderosMobile\\SenderosMobile\\App.x" +
+        "aml")]
     public partial class App : global::Xamarin.Forms.Application {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

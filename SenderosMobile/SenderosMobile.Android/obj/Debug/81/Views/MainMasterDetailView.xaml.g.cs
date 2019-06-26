@@ -13,8 +13,8 @@
 namespace SenderosMobile {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\David Herrera\\source\\repos\\SenderosMobile\\SenderosMobile\\SenderosMobile\\" +
-        "Views\\MainMasterDetailView.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\David Herrera\\source\\senderos-mobile\\SenderosMobile\\SenderosMobile\\Views" +
+        "\\MainMasterDetailView.xaml")]
     public partial class MainMasterDetailView : global::Xamarin.Forms.MasterDetailPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

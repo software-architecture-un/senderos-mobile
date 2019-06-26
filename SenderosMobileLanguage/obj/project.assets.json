@@ -430,11 +430,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\David Herrera\\source\\repos\\SenderosMobile\\SenderosMobileLanguage\\SenderosMobileLanguage.csproj",
+      "projectUniqueName": "C:\\Users\\David Herrera\\source\\senderos-mobile\\SenderosMobileLanguage\\SenderosMobileLanguage.csproj",
       "projectName": "SenderosMobileLanguage",
-      "projectPath": "C:\\Users\\David Herrera\\source\\repos\\SenderosMobile\\SenderosMobileLanguage\\SenderosMobileLanguage.csproj",
+      "projectPath": "C:\\Users\\David Herrera\\source\\senderos-mobile\\SenderosMobileLanguage\\SenderosMobileLanguage.csproj",
       "packagesPath": "C:\\Users\\David Herrera\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\David Herrera\\source\\repos\\SenderosMobile\\SenderosMobileLanguage\\obj\\",
+      "outputPath": "C:\\Users\\David Herrera\\source\\senderos-mobile\\SenderosMobileLanguage\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

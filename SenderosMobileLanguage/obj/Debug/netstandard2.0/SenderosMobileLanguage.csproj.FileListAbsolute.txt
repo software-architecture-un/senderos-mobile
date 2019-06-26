@@ -9,3 +9,13 @@ C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobileLanguage\obj\De
 C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobileLanguage\obj\Debug\netstandard2.0\SenderosMobileLanguage.dll
 C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobileLanguage\obj\Debug\netstandard2.0\SenderosMobileLanguage.pdb
 C:\Users\David Herrera\source\repos\SenderosMobile\SenderosMobileLanguage\obj\Debug\netstandard2.0\SenderosMobileLanguage.csprojAssemblyReference.cache
+C:\Users\David Herrera\source\senderos-mobile\SenderosMobileLanguage\bin\Debug\netstandard2.0\SenderosMobileLanguage.deps.json
+C:\Users\David Herrera\source\senderos-mobile\SenderosMobileLanguage\bin\Debug\netstandard2.0\SenderosMobileLanguage.dll
+C:\Users\David Herrera\source\senderos-mobile\SenderosMobileLanguage\bin\Debug\netstandard2.0\SenderosMobileLanguage.pdb
+C:\Users\David Herrera\source\senderos-mobile\SenderosMobileLanguage\obj\Debug\netstandard2.0\SenderosMobileLanguage.Resx.TextResources.resources
+C:\Users\David Herrera\source\senderos-mobile\SenderosMobileLanguage\obj\Debug\netstandard2.0\SenderosMobileLanguage.csproj.GenerateResource.cache
+C:\Users\David Herrera\source\senderos-mobile\SenderosMobileLanguage\obj\Debug\netstandard2.0\SenderosMobileLanguage.csproj.CoreCompileInputs.cache
+C:\Users\David Herrera\source\senderos-mobile\SenderosMobileLanguage\obj\Debug\netstandard2.0\SenderosMobileLanguage.AssemblyInfoInputs.cache
+C:\Users\David Herrera\source\senderos-mobile\SenderosMobileLanguage\obj\Debug\netstandard2.0\SenderosMobileLanguage.AssemblyInfo.cs
+C:\Users\David Herrera\source\senderos-mobile\SenderosMobileLanguage\obj\Debug\netstandard2.0\SenderosMobileLanguage.dll
+C:\Users\David Herrera\source\senderos-mobile\SenderosMobileLanguage\obj\Debug\netstandard2.0\SenderosMobileLanguage.pdb

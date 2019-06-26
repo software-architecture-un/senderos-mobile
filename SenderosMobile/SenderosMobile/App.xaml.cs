@@ -18,20 +18,27 @@ namespace SenderosMobile
 
             UserResponse userResponse = new UserResponse(); // Para hacer queries a User
 
-            if(Current.Properties["jwt"] == null || Current.Properties["jwt"].ToString() == "")
+            if((Xamarin.Forms.Application.Current.Properties.ContainsKey("jwt")))
             {
-                MainPage = new LandingView();
-            }
-            else
-            {
-                if(userResponse.VerifyToken(Current.Properties["jwt"].ToString()))
-                {
-                    MainPage = new MainMasterDetailView();
-                }
-                else
+                if (Current.Properties["jwt"] == null || Current.Properties["jwt"].ToString() == "")
                 {
                     MainPage = new LandingView();
                 }
+                else
+                {
+                    if (userResponse.VerifyToken(Current.Properties["jwt"].ToString()))
+                    {
+                        MainPage = new MainMasterDetailView();
+                    }
+                    else
+                    {
+                        MainPage = new LandingView();
+                    }
+                }
+            }
+            else
+            {
+                MainPage = new LandingView();
             }
         }
 

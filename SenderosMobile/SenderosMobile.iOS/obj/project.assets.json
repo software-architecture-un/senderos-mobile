@@ -13,6 +13,20 @@
           "lib/Xamarin.iOS10/Plugin.Multilingual.dll": {}
         }
       },
+      "Rg.Plugins.Popup/1.1.5.188": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.5.0.121934"
+        },
+        "compile": {
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll": {},
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll": {},
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.dll": {}
+        }
+      },
       "Xamarin.Forms/3.4.0.1008975": {
         "type": "package",
         "compile": {
@@ -139,6 +153,9 @@
       "SenderosMobileLanguage/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Rg.Plugins.Popup": "1.1.5.188"
+        },
         "compile": {
           "bin/placeholder/SenderosMobileLanguage.dll": {}
         },
@@ -159,6 +176,20 @@
           "lib/Xamarin.iOS10/Plugin.Multilingual.dll": {}
         }
       },
+      "Rg.Plugins.Popup/1.1.5.188": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.5.0.121934"
+        },
+        "compile": {
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll": {},
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll": {},
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.dll": {}
+        }
+      },
       "Xamarin.Forms/3.4.0.1008975": {
         "type": "package",
         "compile": {
@@ -285,6 +316,9 @@
       "SenderosMobileLanguage/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Rg.Plugins.Popup": "1.1.5.188"
+        },
         "compile": {
           "bin/placeholder/SenderosMobileLanguage.dll": {}
         },
@@ -305,6 +339,20 @@
           "lib/Xamarin.iOS10/Plugin.Multilingual.dll": {}
         }
       },
+      "Rg.Plugins.Popup/1.1.5.188": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.5.0.121934"
+        },
+        "compile": {
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll": {},
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll": {},
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.dll": {}
+        }
+      },
       "Xamarin.Forms/3.4.0.1008975": {
         "type": "package",
         "compile": {
@@ -431,6 +479,9 @@
       "SenderosMobileLanguage/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Rg.Plugins.Popup": "1.1.5.188"
+        },
         "compile": {
           "bin/placeholder/SenderosMobileLanguage.dll": {}
         },
@@ -451,6 +502,20 @@
           "lib/Xamarin.iOS10/Plugin.Multilingual.dll": {}
         }
       },
+      "Rg.Plugins.Popup/1.1.5.188": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.5.0.121934"
+        },
+        "compile": {
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll": {},
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll": {},
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.dll": {}
+        }
+      },
       "Xamarin.Forms/3.4.0.1008975": {
         "type": "package",
         "compile": {
@@ -577,6 +642,9 @@
       "SenderosMobileLanguage/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Rg.Plugins.Popup": "1.1.5.188"
+        },
         "compile": {
           "bin/placeholder/SenderosMobileLanguage.dll": {}
         },
@@ -645,6 +713,38 @@
         "lib/netstandard1.0/Plugin.Multilingual.xml",
         "plugin.multilingual.1.0.2.nupkg.sha512",
         "plugin.multilingual.nuspec"
+      ]
+    },
+    "Rg.Plugins.Popup/1.1.5.188": {
+      "sha512": "PE7uHJ/LuI5pSO1HpgjJ+v2KhNfftzqt/L1AoGH/5mX0fP7pcW6lG4FbUHuCFKolrzJfLLotuuET+hfN50Whpg==",
+      "type": "package",
+      "path": "rg.plugins.popup/1.1.5.188",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid/Rg.Plugins.Popup.Droid.dll",
+        "lib/MonoAndroid/Rg.Plugins.Popup.Droid.dll.mdb",
+        "lib/MonoAndroid/Rg.Plugins.Popup.Droid.pdb",
+        "lib/MonoAndroid/Rg.Plugins.Popup.dll",
+        "lib/MonoAndroid/Rg.Plugins.Popup.pdb",
+        "lib/MonoTouch/Rg.Plugins.Popup.IOS.dll",
+        "lib/MonoTouch/Rg.Plugins.Popup.IOS.pdb",
+        "lib/MonoTouch/Rg.Plugins.Popup.dll",
+        "lib/MonoTouch/Rg.Plugins.Popup.pdb",
+        "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll",
+        "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll.mdb",
+        "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.pdb",
+        "lib/Xamarin.IOS/Rg.Plugins.Popup.dll",
+        "lib/Xamarin.IOS/Rg.Plugins.Popup.pdb",
+        "lib/netstandard1.0/Rg.Plugins.Popup.dll",
+        "lib/netstandard1.0/Rg.Plugins.Popup.pdb",
+        "lib/uap10.0/Rg.Plugins.Popup.UWP.dll",
+        "lib/uap10.0/Rg.Plugins.Popup.UWP.pdb",
+        "lib/uap10.0/Rg.Plugins.Popup.dll",
+        "lib/uap10.0/Rg.Plugins.Popup.pdb",
+        "readme.txt",
+        "rg.plugins.popup.1.1.5.188.nupkg.sha512",
+        "rg.plugins.popup.nuspec"
       ]
     },
     "Xamarin.Forms/3.4.0.1008975": {
@@ -813,11 +913,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\David Herrera\\source\\repos\\SenderosMobile\\SenderosMobile\\SenderosMobile.iOS\\SenderosMobile.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\David Herrera\\source\\senderos-mobile\\SenderosMobile\\SenderosMobile.iOS\\SenderosMobile.iOS.csproj",
       "projectName": "SenderosMobile.iOS",
-      "projectPath": "C:\\Users\\David Herrera\\source\\repos\\SenderosMobile\\SenderosMobile\\SenderosMobile.iOS\\SenderosMobile.iOS.csproj",
+      "projectPath": "C:\\Users\\David Herrera\\source\\senderos-mobile\\SenderosMobile\\SenderosMobile.iOS\\SenderosMobile.iOS.csproj",
       "packagesPath": "C:\\Users\\David Herrera\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\David Herrera\\source\\repos\\SenderosMobile\\SenderosMobile\\SenderosMobile.iOS\\obj\\",
+      "outputPath": "C:\\Users\\David Herrera\\source\\senderos-mobile\\SenderosMobile\\SenderosMobile.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -834,8 +934,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\David Herrera\\source\\repos\\SenderosMobile\\SenderosMobileLanguage\\SenderosMobileLanguage.csproj": {
-              "projectPath": "C:\\Users\\David Herrera\\source\\repos\\SenderosMobile\\SenderosMobileLanguage\\SenderosMobileLanguage.csproj"
+            "C:\\Users\\David Herrera\\source\\senderos-mobile\\SenderosMobileLanguage\\SenderosMobileLanguage.csproj": {
+              "projectPath": "C:\\Users\\David Herrera\\source\\senderos-mobile\\SenderosMobileLanguage\\SenderosMobileLanguage.csproj"
             }
           }
         }

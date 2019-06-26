@@ -13,13 +13,21 @@
 namespace SenderosMobile {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\David Herrera\\source\\repos\\SenderosMobile\\SenderosMobile\\SenderosMobile\\" +
-        "Views\\LoginView.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\David Herrera\\source\\senderos-mobile\\SenderosMobile\\SenderosMobile\\Views" +
+        "\\LoginView.xaml")]
     public partial class LoginView : global::Xamarin.Forms.ContentPage {
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::SenderosMobile.EmailEntry EmailEntryField;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::SenderosMobile.PasswordEntry PasswordEntryField;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(LoginView));
+            EmailEntryField = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::SenderosMobile.EmailEntry>(this, "EmailEntryField");
+            PasswordEntryField = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::SenderosMobile.PasswordEntry>(this, "PasswordEntryField");
         }
     }
 }

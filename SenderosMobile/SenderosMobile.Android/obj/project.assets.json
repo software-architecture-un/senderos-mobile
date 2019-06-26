@@ -4794,11 +4794,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\David Herrera\\source\\repos\\SenderosMobile\\SenderosMobile\\SenderosMobile.Android\\SenderosMobile.Android.csproj",
+      "projectUniqueName": "C:\\Users\\David Herrera\\source\\senderos-mobile\\SenderosMobile\\SenderosMobile.Android\\SenderosMobile.Android.csproj",
       "projectName": "SenderosMobile.Android",
-      "projectPath": "C:\\Users\\David Herrera\\source\\repos\\SenderosMobile\\SenderosMobile\\SenderosMobile.Android\\SenderosMobile.Android.csproj",
+      "projectPath": "C:\\Users\\David Herrera\\source\\senderos-mobile\\SenderosMobile\\SenderosMobile.Android\\SenderosMobile.Android.csproj",
       "packagesPath": "C:\\Users\\David Herrera\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\David Herrera\\source\\repos\\SenderosMobile\\SenderosMobile\\SenderosMobile.Android\\obj\\",
+      "outputPath": "C:\\Users\\David Herrera\\source\\senderos-mobile\\SenderosMobile\\SenderosMobile.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -4815,8 +4815,8 @@
       "frameworks": {
         "monoandroid81": {
           "projectReferences": {
-            "C:\\Users\\David Herrera\\source\\repos\\SenderosMobile\\SenderosMobileLanguage\\SenderosMobileLanguage.csproj": {
-              "projectPath": "C:\\Users\\David Herrera\\source\\repos\\SenderosMobile\\SenderosMobileLanguage\\SenderosMobileLanguage.csproj"
+            "C:\\Users\\David Herrera\\source\\senderos-mobile\\SenderosMobileLanguage\\SenderosMobileLanguage.csproj": {
+              "projectPath": "C:\\Users\\David Herrera\\source\\senderos-mobile\\SenderosMobileLanguage\\SenderosMobileLanguage.csproj"
             }
           }
         }
